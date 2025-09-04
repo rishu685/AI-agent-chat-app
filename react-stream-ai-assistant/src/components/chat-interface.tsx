@@ -265,7 +265,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
   };
 
   return (
-    <div className="flex flex-col h-full bg-background">
+    <div className="flex flex-col h-full w-full max-w-full md:max-w-2xl mx-auto px-2 md:px-0 bg-background">
       {/* Enhanced Header */}
       <header className="flex-shrink-0 flex items-center justify-between px-4 py-3 border-b bg-background/95 backdrop-blur-sm z-10">
         <div className="flex items-center gap-3">

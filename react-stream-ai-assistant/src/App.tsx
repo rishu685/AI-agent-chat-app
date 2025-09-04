@@ -30,13 +30,15 @@ function App() {
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="h-screen bg-background">
-        {user ? (
-          <AuthenticatedApp user={user} onLogout={handleLogout} />
-        ) : (
-          <Login onLogin={handleUserLogin} />
-        )}
-
+      <div className="min-h-screen bg-background text-foreground flex flex-col md:flex-row md:overflow-hidden">
+        {/* Main content area */}
+        <main className="flex-1 w-full max-w-full px-2 py-4 md:px-8 md:py-8 overflow-x-auto">
+          {user ? (
+            <AuthenticatedApp user={user} onLogout={handleLogout} />
+          ) : (
+            <Login onLogin={handleUserLogin} />
+          )}
+        </main>
         <Toaster />
       </div>
     </ThemeProvider>
