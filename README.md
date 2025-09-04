@@ -357,4 +357,4 @@ For support and questions:
 
 ---
 
-Built with GetStream.io, OpenAI, and modern web technologies.
+Built by Rishabh Mishra....
