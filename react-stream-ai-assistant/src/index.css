@@ -1,5 +1,4 @@
 /* stylelint-disable */
-/* stylelint-disable */
 @import "stream-chat-react/dist/css/v2/index.css";
 
 @tailwind base;
@@ -10,35 +9,21 @@
   html {
     overflow-y: hidden;
   }
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
-    overscroll-behavior: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  html,
-  body {
-    overscroll-behavior-y: none;
-  }
-
-  /* Responsive font size for mobile */
-  html {
-    font-size: 16px;
-  }
-  @media (max-width: 640px) {
-    html {
-      font-size: 15px;
-    }
-  }
-  @media (max-width: 480px) {
-    html {
-      font-size: 14px;
-    }
-  }
-}
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 262 80% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
@@ -68,23 +53,37 @@
     --input: 220 15% 18%;
     --ring: 262 80% 60%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground font-sans antialiased;
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
   }
 
-  /* Disable bouncy scroll effect globally */
   html,
   body {
     overscroll-behavior-y: none;
-    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Responsive font size for mobile */
+  html {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 640px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 14px;
+    }
   }
 
   /* Disable overscroll for all scrollable elements */
@@ -160,46 +159,39 @@
     --str-chat__avatar-background-color: hsl(var(--secondary));
     --str-chat__avatar-text-color: hsl(var(--secondary-foreground));
   }
+}
 
-  /* Chat app specific styles */
-  /* These are now handled by the Stream theme, but we can keep them for overrides if needed */
-  /* Animation for typing indicator */
-  @keyframes typing-bounce {
-    0%,
-    60%,
-    100% {
-      transform: translateY(0);
-    }
-    30% {
-      transform: translateY(-8px);
-    }
+/* Chat app specific styles */
+/* Animation for typing indicator */
+@keyframes typing-bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
   }
+  30% {
+    transform: translateY(-8px);
+  }
+}
 
-  .typing-dot {
-    animation: typing-bounce 1.4s infinite;
-  }
+.typing-dot {
+  animation: typing-bounce 1.4s infinite;
+}
 
-  .typing-dot:nth-child(2) {
-    animation-delay: 0.2s;
-  }
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
 
-  .typing-dot:nth-child(3) {
-    animation-delay: 0.4s;
-  }
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
-  /* Stream message bubble styling */
-  .str-chat__message-bubble {
-    background: var(--str-chat__message-bubble-background);
-    color: var(--str-chat__message-bubble-color);
-    border: 1px solid var(--str-chat__border-color);
-  }
+/* Stream message bubble styling */
+.str-chat__message-bubble {
+  background: var(--str-chat__message-bubble-background);
+  color: var(--str-chat__message-bubble-color);
+  border: 1px solid var(--str-chat__border-color);
+}
 
-  .str-chat__message-bubble--me {
-    background: var(--str-chat__own-message-bubble-background);
-    color: var(--str-chat__own-message-bubble-color);
-  }
-
-  .str-chat__theme-dark .str-chat__channel-list-messenger {
-    background-color: hsl(var(--background));
-  }
+.str-chat__message-bubble--me {
+  background: var(--str-chat__own-message-bubble-background);
+  color: var(--str-chat__own-message-bubble-color);
 }
