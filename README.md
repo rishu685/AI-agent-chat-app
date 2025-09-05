@@ -22,6 +22,45 @@ The app helps with content creation, research, and collaboration.
 - Mobile-first, responsive design
 
 
+## Demo Video
+
+See the AI Agent Chat App in action! 🎥
+
+### 📹 Watch the Demo
+
+<!-- Replace with your actual video - choose one of the options below -->
+
+#### Option 1: Embedded Video (GitHub supports direct video embedding)
+```markdown
+https://github.com/rishu685/AI-agent-chat-app/assets/your-user-id/demo-video.mp4
+```
+
+#### Option 2: YouTube/Vimeo with Thumbnail
+[![AI Agent Chat App Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+
+#### Option 3: GIF Demo (Always works on GitHub)
+![AI Agent Chat App Demo](./assets/demo.gif)
+
+### 🎬 How to Add Your Video
+
+1. **For Video Files**: 
+   - Add your video file to the `./assets/` directory
+   - Use GitHub's direct video embedding: `https://github.com/username/repo/assets/user-id/video.mp4`
+   - Keep files under 25MB for best performance
+
+2. **For YouTube/Vimeo**:
+   - Upload your demo to YouTube or Vimeo
+   - Replace `YOUR_VIDEO_ID` with your actual video ID
+   - The thumbnail will show with a clickable link to the video
+
+3. **For GIF**:
+   - Convert your video to GIF format
+   - Place in `./assets/demo.gif`
+   - GIFs auto-play and work reliably on GitHub
+
+> **💡 Tip**: For the best user experience, we recommend using a GIF for quick previews or hosting longer videos on YouTube with an embedded thumbnail.
+
+
 ## Architecture
 
 ### Backend (`nodejs-ai-assistant/`)
