@@ -67,7 +67,7 @@ app.post("/start-ai-agent", async (req, res) => {
 
       const agent = await createAgent(
         user_id,
-        AgentPlatform.OPENAI,
+        AgentPlatform.GEMINI, // Changed from OPENAI to GEMINI
         channel_type,
         channel_id
       );

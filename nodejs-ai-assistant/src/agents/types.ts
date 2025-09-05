@@ -12,6 +12,7 @@ export interface AIAgent {
 export enum AgentPlatform {
   OPENAI = "openai",
   WRITING_ASSISTANT = "writing_assistant",
+  GEMINI = "gemini",
 }
 
 // Extended message type for writing assistant features
@@ -21,4 +22,13 @@ export interface WritingMessage {
     writingTask?: string;
     suggestions?: string[];
   };
+}
+
+// Message request interface for AI agents
+export interface MessageRequest {
+  message: string;
+  userId: string;
+  userName?: string;
+  channelId?: string;
+  messageId?: string;
 }
