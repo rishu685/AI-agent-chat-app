@@ -1,5 +1,5 @@
 
-live demo:
+DEMO:
 
 https://github.com/user-attachments/assets/679460f7-416f-4b41-8d2b-a4b261104c3c
 
