@@ -1,5 +1,12 @@
 Live Demo recording:  
 
+DEMO:
+
+https://github.com/user-attachments/assets/679460f7-416f-4b41-8d2b-a4b261104c3c
+
+
+
+
 # AI Agent Chat App
 
 This is a modern, full-stack AI-powered chat application featuring:
