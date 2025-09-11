@@ -1,3 +1,4 @@
+Live Demo recording:  
 
 # AI Agent Chat App
 
@@ -345,7 +346,17 @@ npm run build
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### MIT License Summary
+
+- ✅ **Commercial use** - You can use this project for commercial purposes
+- ✅ **Modification** - You can modify the source code
+- ✅ **Distribution** - You can distribute the original or modified code
+- ✅ **Private use** - You can use this project privately
+- ❗ **License and copyright notice** - Include the license and copyright notice in copies
+- ❌ **Liability** - The authors are not liable for any damages
+- ❌ **Warranty** - No warranty is provided
 
 
 ## Support
